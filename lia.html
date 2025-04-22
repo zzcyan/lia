@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Para a minha Lia 💖</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom, #ffe6f0, #fff);
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      margin: 0;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #ff3399;
+      font-size: 2.6em;
+      margin-bottom: 25px;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+
+    .photo {
+      border-radius: 20px;
+      max-width: 280px;
+      width: 90%;
+      height: auto;
+      margin-bottom: 25px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+
+    .typewriter {
+      color: #333;
+      font-size: 1.2em;
+      max-width: 600px;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 2px solid #ff3399;
+      animation: typing 6s steps(80, end), blink 0.75s step-end infinite;
+      margin-bottom: 30px;
+    }
+
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent; }
+    }
+
+    .music-button {
+      background-color: #ff3399;
+      color: white;
+      border: none;
+      padding: 12px 26px;
+      font-size: 1em;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .music-button:hover {
+      background-color: #e62e8f;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Música -->
+  <audio id="bgMusic" loop>
+    <source src="grudinho.mp3" type="audio/mpeg">
+    Seu navegador não suporta áudio HTML5.
+  </audio>
+
+  <!-- Título -->
+  <h1>Para você, Lia 💕</h1>
+
+  <!-- Imagem -->
+  <img src="liafoto.png" alt="Lia maravilhosa" class="photo">
+
+  <!-- Texto animado -->
+  <div class="typewriter">Minha moxinha nena para de besteira pq vc é linda. Te amo demais! 💘</div>
+
+  <!-- Botão de música -->
+  <button class="music-button" onclick="document.getElementById('bgMusic').play()">🎶 Tocar Música</button>
+
+</body>
+</html>
